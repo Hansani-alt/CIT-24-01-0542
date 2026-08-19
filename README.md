@@ -67,6 +67,6 @@ The data is preserved even when the containers are stopped and restarted.
 ## Container List
 
 | Container | Role | Port |
-|---|---|---|
+|-----------|------|------|
 | web-app | Python Flask web application | 5000 |
 | database | MySQL database service | 3306 |
