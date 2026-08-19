@@ -82,70 +82,109 @@ Run:
 
 ```bash
 ./prepare-app.sh
+```
+
 This creates the Docker network, persistent volume, and builds the web application image.
 
-2. Start the Application
+### 2. Start the Application
 
 Run:
 
+```bash
 ./start-app.sh
+```
 
 The application will be available at:
 
+```text
 http://localhost:5000
+```
 
 Open a web browser and visit:
 
 http://localhost:5000
 
-3. Stop the Application
+### 3. Stop the Application
 
 Run:
 
+```bash
 ./stop-app.sh
+```
 
-This stops the containers without deleting the persistent data.
+This stops the application containers without deleting the persistent data.
 
 The application can be started again using:
 
+```bash
 ./start-app.sh
-4. Remove the Application
+```
+
+### 4. Remove the Application
 
 Run:
 
+```bash
 ./remove-app.sh
+```
 
 This removes the application containers, Docker network, images, and persistent volume.
 
-Example Workflow
-Create application resources
+---
+
+## Example Workflow
+
+### Create application resources
+
+```bash
 ./prepare-app.sh
+```
 
 Example output:
 
+```text
 Preparing application...
-Run the application
+```
+
+### Run the application
+
+```bash
 ./start-app.sh
+```
 
 Example output:
 
+```text
 Running application...
 Application is available at:
 http://localhost:5000
+```
 
 Open a web browser and interact with the application.
 
-Stop the application
+### Stop the application
+
+```bash
 ./stop-app.sh
+```
 
 Example output:
 
+```text
 Stopping application...
 Application stopped. Persistent data is preserved.
-Delete all application resources
+```
+
+### Delete all application resources
+
+```bash
 ./remove-app.sh
+```
 
 Example output:
 
+```text
 Removed application resources.
+```
+
 
