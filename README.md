@@ -25,9 +25,8 @@ Check Docker installation:
 
 ```bash
 docker --version
-```text
 ```
-```
+
 ---
 
 ## Network and Volume Details
