@@ -70,3 +70,82 @@ The data is preserved even when the containers are stopped and restarted.
 |-----------|------|------|
 | web-app | Python Flask web application | 5000 |
 | database | MySQL database service | 3306 |
+
+
+---
+
+## Instructions
+
+### 1. Prepare the Application
+
+Run:
+
+```bash
+./prepare-app.sh
+This creates the Docker network, persistent volume, and builds the web application image.
+
+2. Start the Application
+
+Run:
+
+./start-app.sh
+
+The application will be available at:
+
+http://localhost:5000
+
+Open a web browser and visit:
+
+http://localhost:5000
+
+3. Stop the Application
+
+Run:
+
+./stop-app.sh
+
+This stops the containers without deleting the persistent data.
+
+The application can be started again using:
+
+./start-app.sh
+4. Remove the Application
+
+Run:
+
+./remove-app.sh
+
+This removes the application containers, Docker network, images, and persistent volume.
+
+Example Workflow
+Create application resources
+./prepare-app.sh
+
+Example output:
+
+Preparing application...
+Run the application
+./start-app.sh
+
+Example output:
+
+Running application...
+Application is available at:
+http://localhost:5000
+
+Open a web browser and interact with the application.
+
+Stop the application
+./stop-app.sh
+
+Example output:
+
+Stopping application...
+Application stopped. Persistent data is preserved.
+Delete all application resources
+./remove-app.sh
+
+Example output:
+
+Removed application resources.
+
