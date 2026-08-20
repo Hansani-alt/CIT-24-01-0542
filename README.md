@@ -71,7 +71,6 @@ The data is preserved even when the containers are stopped and restarted.
 | web-app | Python Flask web application | 5000 |
 | database | MySQL database service | 3306 |
 
-
 ---
 
 ## Instructions
@@ -186,5 +185,3 @@ Example output:
 ```text
 Removed application resources.
 ```
-
-
